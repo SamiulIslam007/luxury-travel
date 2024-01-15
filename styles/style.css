@@ -230,6 +230,7 @@ nav ul li a {
   height: 300px;
   border-radius: 16px;
   object-fit: cover; /*Here i have centered a text in a image- samiul islam*/
+  cursor: pointer;
 }
 .centered-text {
   position: absolute;
@@ -240,6 +241,7 @@ nav ul li a {
   text-align: center;
   font-size: 1.75rem;
   font-weight: 800;
+  cursor: pointer;
 }
 
 /* Why choose us section */
@@ -315,7 +317,7 @@ nav ul li a {
   }
   .header-banner form,
   .banner-content {
-    width: 80%;
+    width: 90%;
   }
   .header-banner form input {
     width: 100%;
