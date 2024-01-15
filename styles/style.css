@@ -17,7 +17,7 @@ img {
   max-width: 100%;
 }
 .section-heading {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 800;
 }
 .section-description {
@@ -175,6 +175,69 @@ nav ul li a {
   margin-top: 20px;
 }
 
+/* Your destination section */
+.your-destination {
+  margin-top: 80px;
+}
+
+.your-destination .section-heading,
+.your-destination .section-description {
+  text-align: center;
+}
+.your-destination-content {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.destination1 {
+  grid-area: maldives;
+}
+.destination2 {
+  grid-area: indonesia;
+}
+.destination3 {
+  grid-area: srilanka;
+}
+.destination4 {
+  grid-area: north-america;
+}
+.destination5 {
+  grid-area: kashmir;
+}
+.destination6 {
+  grid-area: bangladesh;
+}
+.destination7 {
+  grid-area: bandarban;
+}
+.destinations-container {
+  display: grid;
+  gap: 24px;
+  grid-template-areas:
+    "maldives maldives maldives indonesia indonesia indonesia"
+    "srilanka srilanka north-america north-america kashmir kashmir"
+    "bangladesh bangladesh bangladesh bandarban bandarban bandarban";
+}
+
+.destination {
+  position: relative;
+  text-align: center;
+}
+.destination img {
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 /* responsive styles */
 
 /* for tablet */
@@ -213,6 +276,17 @@ nav ul li a {
     text-align: center;
     width: 100% !important;
   }
+  /* your destination section */
+  .destinations-container {
+    grid-template-areas:
+      "maldives indonesia"
+      "srilanka north-america"
+      "kashmir bangladesh"
+      "bandarban bandarban";
+  }
+  .your-destination-content {
+    width: 70%;
+  }
 }
 
 /* for mobile devices */
@@ -232,5 +306,19 @@ nav ul li a {
   .hamburger-icon {
     display: inline-block;
     padding-top: 10px;
+  }
+  /* your destination section */
+  .destinations-container {
+    grid-template-areas:
+      "maldives"
+      "indonesia"
+      "srilanka"
+      "north-america"
+      "kashmir"
+      "bangladesh"
+      "bandarban";
+  }
+  .your-destination-content {
+    width: 100%;
   }
 }
