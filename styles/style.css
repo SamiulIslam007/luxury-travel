@@ -1,0 +1,191 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
+
+/* Shared styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1170px;
+  margin: auto;
+  font-family: "Mulish", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.section-heading {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.section-description {
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 24px;
+}
+.btn-primary {
+  border-radius: 8px !important;
+  background: #ff5400 !important;
+  color: #fff !important;
+  text-align: center;
+  font-weight: 700 !important;
+  cursor: pointer;
+  padding: 16px 34px !important;
+  border: none;
+}
+
+/* Header styles */
+header {
+  padding: 40px 15px;
+}
+.header-title-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header-title {
+  color: #131318;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+.header-title span {
+  color: #ff5400;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav ul li:first-child a {
+  color: #ff5400;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #424247;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.hamburger-icon {
+  display: none;
+}
+
+/* Header banner  */
+.header-banner {
+  border-radius: 16px;
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url(../Images/header-banner.png);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 106px 0;
+  margin-top: 60px;
+}
+.banner-content {
+  width: 55%;
+  margin: auto;
+  text-align: center;
+}
+.header-banner .section-heading {
+  color: #fff;
+}
+.header-banner .section-description {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header-banner form {
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-banner form input {
+  border-radius: 8px;
+  background: #fff;
+  color: rgba(19, 19, 24, 0.5);
+  font-weight: 400;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+
+  width: 20%;
+}
+
+.header-banner form input:first-child {
+  margin-left: 0;
+}
+.find-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+/* responsive styles */
+
+/* for tablet */
+@media screen and (max-width: 992px) {
+  /* nav */
+  nav {
+    flex-direction: column;
+  }
+  .header-banner form,
+  .banner-content {
+    width: 80%;
+  }
+}
+
+/* for mobile devices */
+@media screen and (max-width: 600px) {
+  /* nav styles */
+  .header-title {
+    font-size: 1.75rem;
+  }
+  nav {
+    flex-direction: row;
+    align-items: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .hamburger-icon {
+    display: inline-block;
+    padding-top: 10px;
+  }
+  /* header banner  */
+  .header-banner form {
+    flex-direction: column;
+  }
+  .header-banner form,
+  .banner-content {
+    width: 80%;
+  }
+  .header-banner form input {
+    width: 100%;
+  }
+}
