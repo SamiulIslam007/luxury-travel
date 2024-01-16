@@ -386,6 +386,83 @@ nav ul li a {
   width: 100%;
   border-radius: 16px;
 }
+/* News letter section styles */
+
+.news-letter {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 80px;
+}
+.news-letter div {
+  width: 50%;
+}
+.news-letter-content {
+  border: 1px solid #ff5400;
+  border-radius: 16px;
+  padding: 40px;
+}
+.news-letter form input {
+  width: 100%;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 16px 20px;
+  border: none;
+  outline: none;
+  margin-bottom: 16px;
+}
+.news-letter form input[type="submit"] {
+  margin-bottom: 0;
+  margin-top: 24px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+.news-letter-content > p {
+  color: #5a5a5d;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 16px 0 35px 0;
+}
+.news-letter-content > h3 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.news-letter-img {
+  background: url(../Images/newsletter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+  position: relative;
+}
+.news-letter .orange-box {
+  border-radius: 16px;
+  background: #ff5400;
+  padding: 32px 25px;
+  color: #fff;
+  text-align: center;
+  width: 58%;
+  position: absolute;
+  bottom: 48px;
+  right: 20px;
+  transform: rotate(-19.628deg);
+}
+.news-letter .orange-box p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.news-letter .orange-box h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
 /* responsive styles */
 
 /* for tablet */
@@ -393,7 +470,9 @@ nav ul li a {
   /* nav */
   nav,
   .popular-tours,
-  .simple-perfect-place {
+  .simple-perfect-place,
+  .header-banner form,
+  .news-letter {
     flex-direction: column;
   }
   .header-title,
@@ -406,9 +485,7 @@ nav ul li a {
     width: 80%;
   }
   /* header banner  */
-  .header-banner form {
-    flex-direction: column;
-  }
+
   .header-banner form,
   .banner-content {
     width: 90%;
@@ -443,6 +520,16 @@ nav ul li a {
   padding: 20px;
   align-items: flex-end;
   height: 670px;
+}
+/* newsletter styles */
+.news-letter > div {
+  width: 100%;
+}
+.news-letter-img {
+  height: 500px;
+}
+.news-letter .orange-box {
+  bottom: 90px;
 }
 
 /* for mobile devices */
@@ -483,5 +570,22 @@ nav ul li a {
   }
   .why-choose-us-card-container .card:last-child {
     transform: none;
+  }
+  /* newsletter styles */
+
+  .news-letter-img {
+    height: 350px !important;
+  }
+  .news-letter .orange-box {
+    bottom: 46px;
+  }
+  .news-letter .orange-box h2 {
+    font-size: 1.4rem;
+  }
+  .news-letter .orange-box p {
+    font-size: 1rem;
+  }
+  .news-letter .orange-box h2 {
+    font-size: 1.125rem;
   }
 }
