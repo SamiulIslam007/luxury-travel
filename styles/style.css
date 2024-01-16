@@ -334,9 +334,10 @@ nav ul li a {
 .deals-discount .card-description {
   margin: 16px 0;
 }
-.deals-discount-banner {
+.all-banner-container .deals-discount-banner {
   display: flex;
   justify-content: flex-end;
+  align-items: center !important;
   border-radius: 16px;
   background: url(../Images/Group\ 39.png);
   background-repeat: no-repeat;
@@ -345,11 +346,11 @@ nav ul li a {
   padding: 56px;
   margin-bottom: 24px;
 }
-.deals-discount-banner:nth-child(2n) {
+.all-banner-container .deals-discount-banner:nth-child(2n) {
   background-image: url(../Images/Group\ 40.png);
   justify-content: flex-start;
 }
-.deals-discount-banner:last-child {
+.all-banner-container .deals-discount-banner:last-child {
   margin-bottom: 0;
 }
 .deals-discount-banner .card-price {
@@ -540,6 +541,7 @@ ul.social-icons li a {
   }
   .header-banner form input,
   .header-banner form select,
+  .find-btn,
   .popular-tours > div,
   .simple-perfect-place div {
     width: 100%;
@@ -570,6 +572,7 @@ ul.social-icons li a {
   align-items: flex-end;
   height: 670px;
 }
+
 /* newsletter styles */
 .news-letter > div {
   width: 100%;
@@ -620,6 +623,11 @@ ul.social-icons li a {
   .why-choose-us-card-container .card:last-child {
     transform: none;
   }
+  /* Deals and discount */
+  .all-banner-container .deals-discount-banner {
+    padding: 20px;
+    align-items: end !important;
+  }
   /* newsletter styles */
 
   .news-letter-img {
@@ -639,6 +647,6 @@ ul.social-icons li a {
   }
   /* Footer section */
   footer {
-    padding: 55px 35px;
+    padding: 85px 35px;
   }
 }
