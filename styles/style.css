@@ -299,6 +299,7 @@ nav ul li a {
 
 .deals-discount {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 .deals-discount .section-content h2,
 .deals-discount .section-content p {
@@ -363,7 +364,30 @@ nav ul li a {
   text-align: center;
   margin-top: 48px;
 }
+/* Have fun section - in the tents */
 
+.have-fun .section-content {
+  width: 80%;
+}
+.have-fun .section-content h4 {
+  font-size: 1.125rem;
+}
+.have-fun .section-content h4,
+.have-fun .section-content h1,
+.have-fun .section-content p {
+  text-align: center;
+}
+.tents-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px;
+}
+.tents-container .tents img {
+  border-radius: 8px;
+}
+.tent-title {
+  margin: 15px 0;
+}
 /* Simple-perfect-place section */
 .simple-perfect-place {
   display: flex;
@@ -565,23 +589,34 @@ ul.social-icons li a {
   .section-content {
     width: 70%;
   }
-}
-/* Deals and discount section */
-.deals-discount-banner {
-  padding: 20px;
-  align-items: flex-end;
-  height: 670px;
-}
 
-/* newsletter styles */
-.news-letter > div {
-  width: 100%;
-}
-.news-letter-img {
-  height: 500px;
-}
-.news-letter .orange-box {
-  bottom: 90px;
+  /* Deals and discount section */
+  .deals-discount-banner {
+    padding: 20px;
+    align-items: flex-end;
+    height: 670px;
+  }
+  /* Have fun */
+  .tents-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .tents-container {
+    text-align: left;
+  }
+  .tents-container .tents img {
+    width: 100%;
+  }
+
+  /* newsletter styles */
+  .news-letter > div {
+    width: 100%;
+  }
+  .news-letter-img {
+    height: 500px;
+  }
+  .news-letter .orange-box {
+    bottom: 90px;
+  }
 }
 
 /* for mobile devices */
@@ -614,11 +649,12 @@ ul.social-icons li a {
       "bandarban";
   }
   .section-content {
-    width: 100%;
+    width: 100% !important;
   }
   /* Why choose us section */
-  .why-choose-us-card-container {
-    grid-template-columns: repeat(1, 1fr);
+  .why-choose-us-card-container,
+  .tents-container {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
   .why-choose-us-card-container .card:last-child {
     transform: none;
@@ -627,6 +663,12 @@ ul.social-icons li a {
   .all-banner-container .deals-discount-banner {
     padding: 20px;
     align-items: end !important;
+  }
+
+  /* Have fun */
+
+  .tents-container .tents img {
+    width: 100%;
   }
   /* newsletter styles */
 
