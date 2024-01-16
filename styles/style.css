@@ -432,6 +432,12 @@ nav ul li a {
   border-radius: 16px;
   padding: 40px;
 }
+.news-letter-line {
+  height: 2px;
+  width: 100% !important;
+  border: 1px solid rgba(19, 19, 24, 0.1);
+  margin: 24px 0;
+}
 .news-letter form input {
   width: 100%;
   border-radius: 8px;
@@ -575,8 +581,8 @@ ul.social-icons li a {
   }
   .header-banner form select {
     appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+    /* -moz-appearance: none; */
+    /* -webkit-appearance: none; */
   }
   /* popular tours  */
 
