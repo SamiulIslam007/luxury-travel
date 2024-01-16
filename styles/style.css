@@ -354,14 +354,46 @@ nav ul li a {
   font-weight: 800;
   margin-bottom: 20px;
 }
+.deals-discount > .button-container {
+  text-align: center;
+  margin-top: 48px;
+}
 
+/* Simple-perfect-place section */
+.simple-perfect-place {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-top: 80px;
+}
+.simple-perfect-place > div {
+  width: 48%;
+}
+.simple-perfect-place-content ul {
+  padding-left: 25px;
+}
+.simple-perfect-place-content ul li {
+  color: #131318;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 16px;
+}
+.simple-perfect-place-content button {
+  margin-top: 32px;
+}
+.simple-video > video {
+  width: 100%;
+  border-radius: 16px;
+}
 /* responsive styles */
 
 /* for tablet */
 @media screen and (max-width: 992px) {
   /* nav */
   nav,
-  .popular-tours {
+  .popular-tours,
+  .simple-perfect-place {
     flex-direction: column;
   }
   .header-title,
@@ -381,14 +413,13 @@ nav ul li a {
   .banner-content {
     width: 90%;
   }
-  .header-banner form input {
+  .header-banner form input,
+  .popular-tours > div,
+  .simple-perfect-place div {
     width: 100%;
   }
   /* popular tours  */
 
-  .popular-tours > div {
-    width: 90%;
-  }
   .popular-tour-img-container,
   .why-choose-us-card-container .card,
   .deals-discount-card {
