@@ -573,6 +573,11 @@ ul.social-icons li a {
   .simple-perfect-place div {
     width: 100%;
   }
+  .header-banner form select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
   /* popular tours  */
 
   .popular-tour-img-container,
