@@ -1,5 +1,5 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mulish:wght@400;500;600;700;800;900&display=swap");
 
 /* Shared styles */
 * {
@@ -7,13 +7,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+header,
+main {
   max-width: 1170px;
   margin: auto;
   font-family: "Mulish", sans-serif;
   padding: 0 20px;
 }
-img {
+img,
+video {
   max-width: 100%;
 }
 .section-heading {
@@ -31,6 +33,7 @@ img {
   background: #ff5400 !important;
   color: #fff !important;
   text-align: center;
+  font-family: Mulish;
   cursor: pointer;
   padding: 16px 34px !important;
   border: none;
@@ -142,7 +145,8 @@ nav ul li a {
   gap: 24px;
 }
 
-.header-banner form input {
+.header-banner form input,
+.header-banner form select {
   border-radius: 8px;
   background: #fff;
   color: rgba(19, 19, 24, 0.5);
@@ -363,7 +367,7 @@ nav ul li a {
 .simple-perfect-place {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
   margin-top: 80px;
 }
@@ -382,6 +386,7 @@ nav ul li a {
 .simple-perfect-place-content button {
   margin-top: 32px;
 }
+
 .simple-video > video {
   width: 100%;
   border-radius: 16px;
@@ -449,7 +454,7 @@ nav ul li a {
   text-align: center;
   width: 58%;
   position: absolute;
-  bottom: 48px;
+  bottom: 48px !important;
   right: 20px;
   transform: rotate(-19.628deg);
 }
@@ -463,6 +468,49 @@ nav ul li a {
   font-weight: 800;
 }
 
+footer {
+  margin-top: 80px;
+  padding: 110px 0;
+  background: rgba(19, 19, 24, 0.05);
+}
+footer .section-description {
+  margin: 15px 0 33px 0;
+  color: #5a5a5d;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin-bottom: 32px;
+}
+
+ul.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+ul.social-icons li a {
+  text-decoration: none;
+  color: #131318;
+  font-size: 2rem;
+}
+.footer-line {
+  height: 2px;
+  border-top: 1px solid rgba(19, 19, 24, 0.1);
+  width: 80%;
+  margin: auto;
+}
+.copy-right {
+  color: #131318;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 50px;
+}
 /* responsive styles */
 
 /* for tablet */
@@ -491,6 +539,7 @@ nav ul li a {
     width: 90%;
   }
   .header-banner form input,
+  .header-banner form select,
   .popular-tours > div,
   .simple-perfect-place div {
     width: 100%;
@@ -587,5 +636,9 @@ nav ul li a {
   }
   .news-letter .orange-box h2 {
     font-size: 1.125rem;
+  }
+  /* Footer section */
+  footer {
+    padding: 55px 35px;
   }
 }
